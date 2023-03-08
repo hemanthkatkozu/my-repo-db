@@ -5,7 +5,7 @@ pipeline {
             steps {
                 cleanWs()
                 sh '''
-                git clone -b master https://github.com/hemanthkatkozu/terraform-aws-ec2-instance.git
+                git clone -b $branches $GITURL
                 '''
             }
         }
