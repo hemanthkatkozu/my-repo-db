@@ -9,14 +9,14 @@ pipeline {
                 '''
             }
         }
-        /*stage ('maven-build') {
+        stage ('maven-build') {
             steps {
                 sh '''
                 cd hello-world
                 mvn clean install
                 '''
             }
-        }*/
+        }
     }
     post {
         always {
